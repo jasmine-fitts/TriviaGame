@@ -1,0 +1,26 @@
+body {
+    background: url("../images/Beyoncé.jpg");
+    background-size: cover;
+}
+
+.jumbotron {
+    border: 2px outset;
+    height: 250px; 
+    text-align: center;
+    opacity: .7;
+    font-family: 'Shadows Into Light Two', cursive; 
+    box-shadow: 0 6px #1f1f1a;
+    border: 2px outset red;
+}
+.wrapper {
+    margin: 20px auto;
+    padding: 20px;  
+    background-color: rgb(236, 130, 130);
+    opacity: .90;
+    border: 5px; stroke-dashoffset: 35%;
+    height: 600px;
+    width: 600px;
+    text-align: justify;
+    box-shadow: 0 6px #1f1f1a;
+    border: 5px groove red; 
+}
