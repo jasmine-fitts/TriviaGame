@@ -4,7 +4,7 @@ body {
 }
 
 .jumbotron {
-    height: 250px; 
+    height: 280px; 
     text-align: center;
     opacity: .7; 
     box-shadow: 0 6px #1f1f1a;
@@ -16,7 +16,7 @@ body {
     background-color: rgb(236, 130, 130);
     opacity: .90;
     border: 5px; stroke-dashoffset: 35%;
-    height: 750px;
+    height: 800px;
     width: 650px;
     text-align: center;
     box-shadow: 0 6px #1f1f1a;
