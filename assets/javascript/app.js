@@ -1,5 +1,5 @@
 //List of correct answers to the questions
-var Answers = ["Giselle", "Houston", "Star", "Lemonade", "false", "Crazy In Love", "Twice", "She was pregnant"]
+var Answers = ["Giselle", "Houston", "Star Search", "Lemonade", "false", "Crazy In Love", "Twice", "She was pregnant"]
 
 //Create an array of user guesses 
 
