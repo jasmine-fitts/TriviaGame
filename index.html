@@ -14,10 +14,13 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700i" rel="stylesheet">
 
 
+
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/app.js"></script>
    
        
 </head>
@@ -30,40 +33,32 @@
 
                   <p class> Click Button to Start</p>
 
-                  <button type="button" class="btn btn-outline-danger-lg">Start Game</button>
+                  <button type="button" id="start-button" class="btn btn-outline-danger-lg">Start Game</button>
                 </div>
               </div>
              
-
-            <div id="Time Remaining"></div>
-
 
             <div id="submitScreen">
               <h3>How Well Do you Know Bey?</h3>
 
               <p id="correctAnswers">Correct Answers:</p>
               <p id="incorrectAnswers">Incorrect Answers:</p>
+              <p id="unAnswered">Unanswered Questions</p>
             </div>
 
-            <div id="timesUp">
-              <div class="timesUp">
-                <h3>Your Time is Up</h3>
-
-              <p id="correctTimesUp">Correct Answers:</p>
-              <p id="incorrectTimesUp">Incorrect Answers:</p>
-              </div>
-            </div>
 
         
         <div class="wrapper">
 
+            <div id="time-remaining">Time Remaining:</div>
+
             <h5 class="questions">What is Beyonce's middle name?</h5>
 
             <p class="answerChoices">
-                <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Abigail</label>
-                <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Giselle</label>
-                <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Solange</label>
-                <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Genevieve</label>
+                <input type="radio" name="q1" value="a" id="qa"><label for="q1a">Abigail</label>
+                <input type="radio" name="q1" value="b" id="qb"><label for="q1b">Giselle</label>
+                <input type="radio" name="q1" value="c" id="qc"><label for="q1c">Solange</label>
+                <input type="radio" name="q1" value="d" id="qd"><label for="q1d">Genevieve</label>
               
             </p>
 
@@ -122,12 +117,9 @@
             </div>
 
 
-            <button type="button" class="btn btn-outline-danger-lg">Submit Answers</button>
+            <button type="button" id="submit-button" class="btn btn-outline-danger-lg">Submit Answers</button>
     </div>
    
 </body>
-<script src="assets/javascript/app.js"></script>
-       
-
 </html>
  

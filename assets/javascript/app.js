@@ -1,55 +1,47 @@
-//List of correct answers to the questions
-var Answers = ["Giselle", "Houston", "Star Search", "Lemonade", "false", "Crazy In Love", "Twice", "She was pregnant"]
+$(document).ready(function() {
 
-//Create an array of user guesses 
+
+//An array of the correct answers from each question
+var Answers = ["Giselle", "Houston", "Star Search", "Lemonade", "false", "Crazy In Love", "Twice", "She was pregnant"]
 
 var userGuesses = []
 
 var correctAnswers = 0
 var incorrectAnswers = 0
+var unAnswered = 0
+var timeRemaining = 65;
+var intervalId; 
+var userGuesses = []
 
-$(document).ready(function () {
-  $("#start-button").click(function () {
-   
+})
+
+//When user clicks the start button, this function will happen
+//The start button and jumbotron will hide
+//The timer of 65 seconds will begin to deplete
+
+$("#start-button").click(function() {
+  $("#start-button").hide();
+  $(".jumbotron").hide();
+ 
 
 
-  })
-  
-  
-  $(".ANS").click(function () {
-    var userChoice = $(this).text().trim()
-    userGuesses.push(userChoice)
-
-    console.log(userGuesses);
-
-  })
+  //The questions and answer choices within the wrapper will be hidden until user clicks on the start button
 
 
-  // Hide the questions until the user click on the start button - jQuery hide method
-  $(".wrapper").click(function() {
-    
 
-  })
+ //Create a for loop that goes through each answer choice the user picks 
 
-  //If the user answers each question within the time frame they are able to submit their choices 
-  $("#submit-button").click(function () {
-    
+ //Every incorrect answer with push to the userGuesses Array
 
-    for (var i = 0; i < correctAnswer.length; i++) {
-      if (userChoice[i] === correctAnswer[i]) {
-        correctAnswers++
-      }
-     else(userChoice[i] !== correctAnswer[i]) 
-        incorrectAnswers++
 
-    }
 
-    function resetGame(){
-      
-    }
+//If the user answer each question within the alloted time they can press the submit button
 
-  });
 
-});
+//If time remaining equals 0 and user hasn't pressed submit alert Times Up!
 
-//Create the time interval for the quiz
+//Show a screen that shows the game is over and how many questions the user got correct, incorrect, or left unanswered
+
+
+
+})

@@ -31,3 +31,10 @@ body {
     opacity: .50;
     background-color: peachpuff
 }
+
+#time-remaining {
+    padding: 20px; 
+    color: black; 
+    
+    
+}
