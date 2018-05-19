@@ -9,6 +9,11 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/sytle.css">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700i" rel="stylesheet">
+
+
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -17,111 +22,107 @@
        
 </head>
 <body>
+
         <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                   <h1 class=>Beyonce' Trvia</h1>
-                  <h2 class=>Time Remaining</h2>
+                  <h4 class=> How Well Do You Know Bey?</h4>
 
-                  <button type="button" id="start-button">Start</button>
+                  <p class> Click Button to Start</p>
+
+                  <button type="button" class="btn btn-outline-danger-lg">Start Game</button>
                 </div>
               </div>
-        
+             
+
+            <div id="Time Remaining"></div>
+
+
+            <div id="submitScreen">
+              <h3>How Well Do you Know Bey?</h3>
+
+              <p id="correctAnswers">Correct Answers:</p>
+              <p id="incorrectAnswers">Incorrect Answers:</p>
+            </div>
+
+            <div id="timesUp">
+              <div class="timesUp">
+                <h3>Your Time is Up</h3>
+
+              <p id="correctTimesUp">Correct Answers:</p>
+              <p id="incorrectTimesUp">Incorrect Answers:</p>
+              </div>
+            </div>
+
         
         <div class="wrapper">
-        
 
-            <h3>What is Beyonce's middle name?</h3>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-secondary Active ANS">
-                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Solange
-                    </label>
-                    <label class="btn btn-secondary ANS">
-                      <input type="radio" name="options" id="option2" autocomplete="off"> Kelly
-                    </label>
-                    <label class="btn btn-secondary ANS">
-                      <input type="radio" name="options" id="option3" autocomplete="off"> Giselle
-                    </label>
-                  </div>
+            <h5 class="questions">What is Beyonce's middle name?</h5>
 
-            <h3>Where is Beyonce from?</h3>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary Active ANS">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> Los Angeles 
-              </label>
-              <label class="btn btn-secondary ANS">
-                <input type="radio" name="options" id="option2" autocomplete="off"> New Orleans
-              </label>
-              <label class="btn btn-secondary ANS">
-                <input type="radio" name="options" id="option3" autocomplete="off"> Houston
-              </label>
-            </div>
+            <p class="answerChoices">
+                <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Abigail</label>
+                <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Giselle</label>
+                <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Solange</label>
+                <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Genevieve</label>
+              
+            </p>
 
-            <h3>What famous reality show was Beyonce' on as a child?</h3>
 
-            <h3>What is the name of Beyonce's latest album?</h3>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary Active ANS">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> Formation
-              </label>
-              <label class="btn btn-secondary ANS">
-                <input type="radio" name="options" id="option2" autocomplete="off"> On The Run II
-              </label>
-              <label class="btn btn-secondary ANS">
-                <input type="radio" name="options" id="option3" autocomplete="off"> Lemonade
-              </label>
-            </div>
+              <h5 class="questions">Where is Beyonce' from?</h5>
 
-            <h3>True of False: Beyonce gave birth to twin girls.</h3>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary Active ANS">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> True
-              </label>
-              <label class="btn btn-secondary ANS">
-                <input type="radio" name="options" id="option2" autocomplete="off"> False
-              </label>
-            </div>
+              <p class="answerChoices">
+                  <input type="radio" name="q2" value="a" id="q2a"><label for="q1a">Alabama</label>
+                  <input type="radio" name="q2" value="b" id="q2b"><label for="q1b">New Orleans</label>
+                  <input type="radio" name="q2" value="c" id="q2c"><label for="q1c">Houston</label>
+                  <input type="radio" name="q2" value="d" id="q2d"><label for="q1d">Dallas</label>
 
-            <h3>Which of the following movies did Beyonce NOT appear in </h3>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary Active ANS">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> The Seat Filler
-              </label>
-              <label class="btn btn-secondary ANS">
-                <input type="radio" name="options" id="option2" autocomplete="off">Carmen: A Hip Hop Opera
-              </label>
-              <label class="btn btn-secondary ANS">
-                <input type="radio" name="options" id="option3" autocomplete="off"> The Pink Panther
-              </label>
-            </div>
+              <h5 class="questions">What famous tv show was Beyonce' on as a child?</h5>
+              <p class="answerChoices">
+                  <input type="radio" name="q3" value="a" id="q3a"><label for="q1a">Star Search</label>
+                  <input type="radio" name="q3" value="b" id="q3b"><label for="q1b">ShowTime At The Apollo</label>
+                  <input type="radio" name="q3" value="c" id="q3c"><label for="q1c">American Idol</label>
+                  <input type="radio" name="q3" value="d" id="q3d"><label for="q1d">The X-Factor</label>
 
-            <h3>How many times has Beyonce' performed at the SuperBowl?
-            </h3>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary Active ANS">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> Twice
-              </label>
-              <label class="btn btn-secondary ANS">
-                <input type="radio" name="options" id="option2" autocomplete="off">Once
-              </label>
-              <label class="btn btn-secondary ANS">
-                <input type="radio" name="options" id="option3" autocomplete="off"> None
-              </label>
-            </div>
+              <h5 class="questions">What is the name of Beyonce's latest album?</h5>
 
-            <h3>Why did Beyonce cancel her 2017 Coachella performance?</h3>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary Active ANS">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> SHe was hospitalized
-              </label>
-              <label class="btn btn-secondary ANS">
-                <input type="radio" name="options" id="option2" autocomplete="off">She gave birth
-              <label class="btn btn-secondary ANS">
-                <input type="radio" name="options" id="option3" autocomplete="off"> She was pregnant
-              </label>
+                <p class="answerChoices">
+                    <input type="radio" name="q4" value="a" id="q4a"><label for="q1a">Formation</label>
+                    <input type="radio" name="q4" value="b" id="q4b"><label for="q1b">Dangerously In Love</label>
+                    <input type="radio" name="q4" value="c" id="q4c"><label for="q1c">Lemonade</label>
+                    <input type="radio" name="q4" value="d" id="q4d"><label for="q1d">The Writings On The Wall</label>
+
+              <h5 class="questions">True of False: Beyonce gave birth to twin girls.</h5>
+              <p class="answerChoices">
+                  <input type="radio" name="q5" value="a" id="q5a"><label for="q1a">True</label>
+                  <input type="radio" name="q5" value="b" id="q5b"><label for="q1b">False</label>
+              
+              
+              <h5 class="questions">Which of the following movies did Beyonce NOT appear in </h5>
+
+                <p class="answerChoices">
+                    <input type="radio" name="q6" value="a" id="q6a"><label for="q1a">The Seat Filler</label>
+                    <input type="radio" name="q6" value="b" id="q6b"><label for="q1b">Obsessed</label>
+                    <input type="radio" name="q6" value="c" id="q6c"><label for="q1c">Carmen: A Hip Hop Opera</label>
+                    <input type="radio" name="q6" value="d" id="q6d"><label for="q1d">The Pink Panther</label>
+              
+              <h5 class="questions">How many times has Beyonce' performed at the SuperBowl?</h5>
+                <p class="answerChoices">
+                  <input type="radio" name="q7" value="a" id="q7a"><label for="q1a">She's Never Performed</label>
+                  <input type="radio" name="q7" value="b" id="q7b"><label for="q1b">Twice</label>
+                  <input type="radio" name="q7" value="c" id="q7c"><label for="q1c">4 times</label>
+                  <input type="radio" name="q7" value="d" id="q7d"><label for="q1d">Once</label>
+
+              <h5 class="questions">Why did Beyonce cancel her 2017 Coachella performance?</h5>
+
+              <p class="answerChoices">
+                <input type="radio" name="q7" value="a" id="q7a"><label for="q1a">She was hospitalized</label>
+                <input type="radio" name="q7" value="b" id="q7b"><label for="q1b">She was pregnant</label>
+                <input type="radio" name="q7" value="c" id="q7c"><label for="q1c">She gave birth</label>
+               
             </div>
 
 
-            <button type="button" id="submit">Submit Answers</button>
+            <button type="button" class="btn btn-outline-danger-lg">Submit Answers</button>
     </div>
    
 </body>

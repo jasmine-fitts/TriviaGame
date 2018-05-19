@@ -1,5 +1,5 @@
 body {
-    background: url("../images/Beyoncé.jpg");
+    background: url("../images/Laura-vinck-427554-unsplash.jpg");
     background-size: cover;
 }
 
@@ -16,9 +16,18 @@ body {
     background-color: rgb(236, 130, 130);
     opacity: .90;
     border: 5px; stroke-dashoffset: 35%;
-    height: 600px;
-    width: 600px;
-    text-align: justify;
+    height: 750px;
+    width: 650px;
+    text-align: center;
     box-shadow: 0 6px #1f1f1a;
     border: 5px groove red; 
+}
+
+.questions {
+    font-family: 'Montserrat', sans-serif;
+
+    }
+.btn {
+    opacity: .50;
+    background-color: peachpuff
 }
